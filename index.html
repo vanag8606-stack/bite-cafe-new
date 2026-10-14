@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6f3ec">
+  <meta name="description" content="Bite Cafe — бургери, піца, закуски, комбо, напої та десерти. Обирай у меню й оформлюй доставку через Telegram.">
+  <title>Bite Cafe — Їжа з характером</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <span class="live-dot" aria-hidden="true"></span>
+      <span>Твій настрій просить щось смачне?</span>
+      <span class="topbar-separator">/</span>
+      <span class="topbar-highlight">Замовлення — тільки в Telegram</span>
+      <a href="#menu">До меню <span aria-hidden="true">↓</span></a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Bite Cafe — на початок">
+      <span class="brand-mark"><span>B</span><i>!</i></span>
+      <span class="brand-word">bite<span>cafe</span><small>FOOD WITH ATTITUDE</small></span>
+    </a>
+
+    <nav class="main-nav" id="main-nav" aria-label="Головна навігація">
+      <a href="#menu">Меню</a>
+      <a href="#why-us">Чому ми</a>
+      <a href="#how-to-order">Як замовити</a>
+    </nav>
+
+    <a class="header-order" href="#menu">
+      <span class="telegram-mini" aria-hidden="true">🛒</span> До меню <span class="arrow" aria-hidden="true">↓</span>
+    </a>
+    <button class="mobile-menu-toggle" type="button" aria-label="Відкрити навігацію" aria-expanded="false" aria-controls="main-nav">☰</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-left">
+        <div class="hero-kicker"><span>✳</span> ВЕЛИКИЙ СМАК. НУЛЬ НУДЬГИ.</div>
+        <h1>Зголоднів?<br>Буде <em>вау.</em></h1>
+        <p class="hero-description">Хрумкі бургери, піца з тягучим сиром і закуски, які зникають зі столу першими. Вибирай свій вайб — замовлення оформлюємо в Telegram.</p>
+        <div class="hero-actions">
+          <a class="btn btn-dark" href="#menu">Знайти свій смак <span aria-hidden="true">↓</span></a>
+          <a class="btn btn-telegram" href="#menu"><span class="telegram-icon" aria-hidden="true">🛒</span> Зібрати кошик</a>
+        </div>
+        <div class="hero-footnote"><span class="footnote-star">✦</span><span><strong>Меню тут — замовлення в боті</strong><small>Обирай страви, а доставку оформлюй у Telegram</small></span></div>
+      </div>
+
+      <div class="hero-right" aria-label="Бургер Bite Cafe">
+        <div class="hero-orbit orbit-a"></div>
+        <div class="hero-orbit orbit-b"></div>
+        <div class="hero-image"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1200&q=90" alt="Соковитий бургер із сиром і свіжими овочами" fetchpriority="high"></div>
+        <div class="hero-stamp"><span>GOOD</span><strong>BITE</strong><span>GOOD MOOD ✳</span></div>
+        <div class="hero-caption"><span class="caption-emoji" aria-hidden="true">🍔</span><span><strong>Смачно — це стиль</strong><small>Знайди свого фаворита</small></span><span class="caption-spark" aria-hidden="true">✳</span></div>
+        <span class="hero-scribble scribble-one" aria-hidden="true">✳</span>
+        <span class="hero-scribble scribble-two" aria-hidden="true">✦</span>
+      </div>
+      <div class="hero-index"><span>01</span><span class="index-line"></span><span>ЇЖА З ХАРАКТЕРОМ</span></div>
+    </section>
+
+    <div class="food-ticker" aria-label="Наше меню">
+      <div class="ticker-track" aria-hidden="true">
+        <span>BURGERS <b>✳</b></span><span>PIZZA <b>✳</b></span><span>CRUNCHY BITES <b>✳</b></span><span>DRINKS <b>✳</b></span><span>SWEET THINGS <b>✳</b></span><span>BURGERS <b>✳</b></span><span>PIZZA <b>✳</b></span><span>CRUNCHY BITES <b>✳</b></span><span>DRINKS <b>✳</b></span><span>SWEET THINGS <b>✳</b></span>
+      </div>
+    </div>
+
+    <section class="menu-section section-wrap" id="menu">
+      <div class="menu-heading">
+        <div class="section-kicker"><span>✳</span> ЗНАЙДИ СВОЄ</div>
+        <h2>Меню без <em>нудьги.</em></h2>
+        <p>Від першого хрумкого укусу до останньої крихти. Гортай, обирай і переходь у Telegram, щоб оформити доставку.</p>
+      </div>
+
+      <div class="menu-tools">
+        <div class="filters" role="group" aria-label="Категорії меню">
+          <button class="filter active" type="button" data-category="all" aria-pressed="true">Усе <span>24</span></button>
+          <button class="filter" type="button" data-category="burger" aria-pressed="false">🍔 Бургери</button>
+          <button class="filter" type="button" data-category="pizza" aria-pressed="false">🍕 Піца</button>
+          <button class="filter" type="button" data-category="snack" aria-pressed="false">🍟 Закуски</button>
+          <button class="filter" type="button" data-category="meal" aria-pressed="false">🌯 Комбо й роли</button>
+          <button class="filter" type="button" data-category="drink" aria-pressed="false">🥤 Напої</button>
+          <button class="filter" type="button" data-category="dessert" aria-pressed="false">🍰 Десерти</button>
+        </div>
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="menu-search" type="search" placeholder="Знайти страву..." autocomplete="off" aria-label="Пошук страв"></label>
+      </div>
+
+      <div class="menu-status" aria-live="polite"><span>МЕНЮ BITE CAFE</span><span id="results-count">24 страви</span></div>
+      <div id="products" class="products" aria-live="polite"></div>
+      <div id="empty-state" class="empty-state" hidden>Нічого не знайшлося. Спробуй іншу назву або категорію ✳</div>
+
+      <div class="menu-cta">
+        <div class="menu-cta-art" aria-hidden="true">➤</div>
+        <div class="menu-cta-copy"><span>ГОТОВИЙ ДО ПЕРШОГО УКУСУ?</span><strong>Твій наступний фаворит уже чекає.</strong><small>Замовлення приймаємо тільки через Telegram-бот.</small></div>
+        <a href="#menu" class="btn btn-cream">До меню <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <section class="why-section" id="why-us">
+      <div class="section-wrap why-wrap">
+        <div class="why-intro">
+          <div class="section-kicker section-kicker-light"><span>✳</span> НАШ ВАЙБ</div>
+          <h2>Не просто їжа.<br><em>Твій момент.</em></h2>
+          <p>Коли день потребує перезавантаження, компанія — чогось смачненького, а вечір — ще одного шматочка піци.</p>
+          <a class="outline-link" href="#menu">Обрати страви <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="why-cards">
+          <article class="why-card"><span class="why-number">01 / ВИБІР</span><div class="why-icon" aria-hidden="true">🍔</div><h3>Є настрій — є страва</h3><p>Соковите, хрумке, сирне чи солодке. Обирай те, чого хочеться саме зараз.</p></article>
+          <article class="why-card why-card-yellow"><span class="why-number">02 / ПРОСТОТА</span><div class="why-icon" aria-hidden="true">➤</div><h3>Замовити — легко</h3><p>Збери кошик на сайті, а адресу, контакти й оплату підтверди в Telegram-боті.</p></article>
+          <article class="why-card"><span class="why-number">03 / ДОСТАВКА</span><div class="why-icon" aria-hidden="true">🛵</div><h3>Їде до тебе</h3><p>Вкажи адресу доставки й спосіб оплати безпосередньо в чаті з ботом.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-section section-wrap" id="how-to-order">
+      <div class="how-title">
+        <div class="section-kicker"><span>✳</span> ЖОДНОЇ МАГІЇ, ТІЛЬКИ СМАК</div>
+        <h2>Три кроки до <em>ням.</em></h2>
+      </div>
+      <div class="steps-grid">
+        <article class="step"><span class="step-count">01</span><div class="step-emoji" aria-hidden="true">🍔</div><h3>Додай до кошика</h3><p>Обери страви й потрібну кількість.</p></article>
+        <article class="step step-featured"><span class="step-count">02</span><div class="step-emoji" aria-hidden="true">🧾</div><h3>Перевір суму</h3><p>У кошику побачиш склад замовлення й загальну вартість.</p></article>
+        <article class="step"><span class="step-count">03</span><div class="step-emoji" aria-hidden="true">🛵</div><h3>Оформи в Telegram</h3><p>Вкажи ім’я, телефон, адресу й спосіб оплати в боті.</p></article>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="final-cta-content"><span class="section-kicker"><span>✳</span> ЧАС ЗРОБИТИ СОБІ СМАЧНО</span><h2>Голод чекати <em>не буде.</em></h2><p>Меню вже перед тобою. А оформлення замовлення — в Telegram.</p><a class="btn btn-dark" href="#menu"><span class="telegram-icon" aria-hidden="true">🛒</span> Зібрати кошик <span aria-hidden="true">↓</span></a></div>
+      <div class="final-cta-image"><img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=900&q=85" alt="Чізбургер з розплавленим сиром" loading="lazy"><span class="image-burst">BITE<br>ME!</span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#top" aria-label="Bite Cafe — на початок"><span class="brand-mark"><span>B</span><i>!</i></span><span class="brand-word">bite<span>cafe</span><small>FOOD WITH ATTITUDE</small></span></a>
+    <p>Смачна їжа. Класний настрій.</p>
+    <a class="footer-telegram" href="https://t.me/BiteCafeOrderBot" target="_blank" rel="noopener noreferrer">Telegram-бот <span aria-hidden="true">↗</span></a>
+    <div class="footer-bottom"><span>© 2026 Bite Cafe</span><span>Меню на сайті · Замовлення тільки в Telegram</span><a href="#top">На початок ↑</a></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
